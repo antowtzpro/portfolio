@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Antoine Wirtz-Berry</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="missions-animations.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation fixe -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">AWB</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                <li><a href="#presentation" class="nav-link">Présentation</a></li>
+                <li><a href="#cv" class="nav-link">CV</a></li>
+                <li><a href="#experiences" class="nav-link">Expériences</a></li>
+                <li><a href="#missions" class="nav-link">Missions</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section d'accueil -->
+    <section id="accueil" class="hero">
+        <div class="hero-background">
+            <div class="animated-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-photo">
+                <img src="PHOTO/PHOTOAWB.png" alt="Antoine Wirtz-Berry" class="profile-photo">
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">PORTFOLIO</span>
+                <span class="title-name">Antoine Wirtz-Berry</span>
+            </h1>
+            <p class="hero-subtitle">Étudiant Ingénieur • Arts et Métiers • Passionné de Technologie</p>
+            <div class="hero-cta">
+                <button class="cta-button" onclick="scrollToSection('sommaire')">
+                    <span>Découvrir mon parcours</span>
+                    <i class="fas fa-arrow-down"></i>
+                </button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <div class="scroll-text">Scroll</div>
+        </div>
+    </section>
+
+    <!-- Sommaire animé -->
+    <section id="sommaire" class="sommaire">
+        <div class="container">
+            <h2 class="section-title">Sommaire</h2>
+            <div class="sommaire-grid">
+                <div class="sommaire-card" data-target="presentation">
+                    <div class="card-icon">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3>Présentation</h3>
+                    <p>Découvrez qui je suis et mes compétences</p>
+                    <div class="card-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="sommaire-card" data-target="cv">
+                    <div class="card-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Curriculum Vitae</h3>
+                    <p>Mon parcours académique et professionnel</p>
+                    <div class="card-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="sommaire-card" data-target="experiences">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Valorisation d'Expériences</h3>
+                    <p>Mes projets et leurs apports</p>
+                    <div class="card-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="sommaire-card" data-target="missions">
+                    <div class="card-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>Fiches Missions</h3>
+                    <p>Détail de mes projets principaux</p>
+                    <div class="card-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="sommaire-card" data-target="contact">
+                    <div class="card-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Contact</h3>
+                    <p>Restons en contact</p>
+                    <div class="card-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Présentation -->
+    <section id="presentation" class="presentation">
+        <div class="container">
+            <!-- Partie textuelle -->
+            <div class="presentation-text">
+                <h2 class="section-title">Présentation</h2>
+                <div class="text-content">
+                    <p class="intro-text">
+                        Je suis <strong>Wirtz-Berry Antoine</strong>, actuellement étudiant en 2ème année dans le bachelor de technologie Arts et Métiers.
+                    </p>
+                    <p>
+                        Je suis actuellement à la recherche d'un <strong>stage Technicien</strong> d'une durée de 3 mois, dans le but d'acquérir de nouvelles compétences, et approfondir mes connaissances dans le milieu industriel.
+                    </p>
+                    <p>
+                        Depuis petit j'ai toujours été très curieux, ce qui m'a amené à m'intéresser à beaucoup de choses comme le <strong>dessin</strong> ou la <strong>musique</strong>, mais ayant un père informaticien, je me suis vite introduit au monde numérique. Je me suis donc orienté dans des études en <strong>STI2D</strong> m'ayant appris les bases de certaines compétences comme la <strong>CAO</strong> (Conception Assistée par Ordinateur) ou encore le <strong>codage</strong> lors de divers projets menés, comme la création d'une station de charge solaire.
+                    </p>
+                    <p>
+                        Je poursuis donc maintenant mes études en <strong>bachelor de technologie</strong>, et cette formation m'a permis d'améliorer drastiquement ces mêmes compétences par le biais d'un lot de projets comme le <strong>projet robot TRR</strong> ou encore la modélisation d'une structure pour un vérin haute vitesse au cours de mon stage dans le laboratoire <strong>I2M</strong>. Mais cette formation m'a aussi apporté des connaissances en <strong>usinage</strong> et en <strong>soudage</strong>, lors des cours que j'ai pu suivre.
+                    </p>
+                    <p>
+                        Enfin, mes projets personnels comme le dessin, la création et la composition de musique assistée par ordinateur m'ont beaucoup apporté, non seulement en regard critique, en rigueur et en créativité, mais cela m'a surtout appris à mener un projet du début à sa fin.
+                    </p>
+                    <p>
+                        En conclusion, les projets que j'ai pu mener et les passions que j'ai, m'ont menés à une <strong>maîtrise polyvalente</strong>, et l'envie d'affiner ces mêmes maîtrises en les appliquant dans un milieu professionnel.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Partie visuelle ULTRA IMAGÉE -->
+            <div class="presentation-ultra-visual">
+                <!-- Section GAUCHE - Qui je suis -->
+                <div class="ultra-visual-card left-card">
+                    <div class="card-background">
+                        <div class="floating-icons">
+                            <i class="fas fa-user-graduate floating-icon icon-1"></i>
+                            <i class="fas fa-university floating-icon icon-2"></i>
+                            <i class="fas fa-calendar-alt floating-icon icon-3"></i>
+                        </div>
+                    </div>
+                    <div class="card-header-ultra">
+                        <div class="main-icon">
+                            <i class="fas fa-id-card"></i>
+                        </div>
+                        <h3>Qui je suis</h3>
+                    </div>
+                    <div class="card-content-ultra">
+                        <div class="info-bubble">
+                            <i class="fas fa-signature"></i>
+                            <span>Antoine Wirtz-Berry</span>
+                        </div>
+                        <div class="info-bubble">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Bachelor Arts et Métiers</span>
+                        </div>
+                        <div class="info-bubble">
+                            <i class="fas fa-university"></i>
+                            <span>Campus Bordeaux Talence</span>
+                        </div>
+                        <div class="info-bubble">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>19 ans</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section MILIEU - Ce que j'aime -->
+                <div class="ultra-visual-card center-card">
+                    <div class="card-background">
+                        <!-- Notes musicales flottantes -->
+                        <div class="musical-notes">
+                            <div class="note note-1">♪</div>
+                            <div class="note note-2">♫</div>
+                            <div class="note note-3">♪</div>
+                            <div class="note note-4">♬</div>
+                            <div class="note note-5">♩</div>
+                            <div class="note note-6">♪</div>
+                        </div>
+                        <!-- Éléments sportifs -->
+                        <div class="sport-elements">
+                            <i class="fas fa-basketball-ball bouncing-ball"></i>
+                        </div>
+                        <!-- Éléments créatifs -->
+                        <div class="creative-elements">
+                            <i class="fas fa-palette color-palette"></i>
+                            <i class="fas fa-pencil-alt drawing-pencil"></i>
+                        </div>
+                    </div>
+                    <div class="card-header-ultra">
+                        <div class="main-icon pulsing">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Ce que j'aime</h3>
+                    </div>
+                    <div class="card-content-ultra">
+                        <div class="passion-circle">
+                            <div class="passion-item-ultra music">
+                                <i class="fas fa-music"></i>
+                                <span>Musique</span>
+                            </div>
+                            <div class="passion-item-ultra art">
+                                <i class="fas fa-paint-brush"></i>
+                                <span>Dessin</span>
+                            </div>
+                            <div class="passion-item-ultra sport">
+                                <i class="fas fa-basketball-ball"></i>
+                                <span>Basket</span>
+                            </div>
+                            <div class="passion-item-ultra tech">
+                                <i class="fas fa-cube"></i>
+                                <span>3D</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section DROITE - Mes Maîtrises -->
+                <div class="ultra-visual-card right-card">
+                    <div class="card-background">
+                        <!-- Animation CAO supprimée -->
+                        <!-- Éléments techniques flottants -->
+                        <div class="tech-elements">
+                            <i class="fas fa-cogs rotating-gear tech-icon-1"></i>
+                            <i class="fas fa-code code-brackets tech-icon-2"></i>
+                            <i class="fas fa-microchip chip-pulse tech-icon-3"></i>
+                        </div>
+                    </div>
+                    <div class="card-header-ultra">
+                        <div class="main-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Mes Maîtrises</h3>
+                    </div>
+                    <div class="card-content-ultra">
+                        <div class="skill-wheel">
+                            <div class="skill-segment cad-skill" onclick="scrollToSection('missions')" style="cursor: pointer;">
+                                <i class="fas fa-cube"></i>
+                                <span>CAO</span>
+                                <div class="skill-details">
+                                    <small>CATIA • Fusion 360 • SolidWorks</small>
+                                </div>
+                            </div>
+                            <div class="skill-segment design-skill" onclick="scrollToSection('missions')" style="cursor: pointer;">
+                                <i class="fas fa-palette"></i>
+                                <span>Design</span>
+                                <div class="skill-details">
+                                    <small>Graphisme • Dessin technique</small>
+                                </div>
+                            </div>
+                            <div class="skill-segment code-skill" onclick="scrollToSection('experiences')" style="cursor: pointer;">
+                                <i class="fas fa-laptop-code"></i>
+                                <span>Code</span>
+                                <div class="skill-details">
+                                    <small>Web • Programmation</small>
+                                </div>
+                            </div>
+                            <div class="skill-segment project-skill" onclick="scrollToSection('missions')" style="cursor: pointer;">
+                                <i class="fas fa-project-diagram"></i>
+                                <span>Projet</span>
+                                <div class="skill-details">
+                                    <small>Planification • Organisation</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section CV -->
+    <section id="cv" class="cv-section">
+        <div class="container">
+            <h2 class="section-title">Curriculum Vitae</h2>
+            <div class="cv-container">
+                <div class="cv-intro">
+                    <p>Découvrez mon parcours académique et professionnel en détail</p>
+                    <button id="cv-reveal-btn" class="cv-button">
+                        <span>Afficher mon CV</span>
+                        <i class="fas fa-eye"></i>
+                    </button>
+                </div>
+                <div id="cv-display" class="cv-display">
+                    <div class="cv-frame">
+                        <img src="CV/CV1.png" alt="CV Antoine Wirtz-Berry" class="cv-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Expériences - VRAI TABLEAU -->
+    <section id="experiences" class="experiences">
+        <div class="container">
+            <h2 class="section-title">Tableau de Valorisation d'Expériences</h2>
+            
+            <!-- Sélecteur de catégorie -->
+            <div class="category-selector">
+                <button class="category-btn active" data-category="all">
+                    <i class="fas fa-th"></i>
+                    <span>Tout voir</span>
+                </button>
+                <button class="category-btn" data-category="savoir">
+                    <i class="fas fa-brain"></i>
+                    <span>Savoir</span>
+                </button>
+                <button class="category-btn" data-category="savoir-etre">
+                    <i class="fas fa-heart"></i>
+                    <span>Savoir-être</span>
+                </button>
+                <button class="category-btn" data-category="savoir-faire">
+                    <i class="fas fa-tools"></i>
+                    <span>Savoir-faire</span>
+                </button>
+            </div>
+            
+            <!-- Tableau interactif -->
+            <div class="experiences-table-container">
+                <table class="experiences-table">
+                    <thead>
+                        <tr>
+                            <th class="project-col">
+                                <i class="fas fa-project-diagram"></i>
+                                Expériences
+                            </th>
+                            <th class="savoir-col">
+                                <i class="fas fa-brain"></i>
+                                Savoir
+                            </th>
+                            <th class="savoir-etre-col">
+                                <i class="fas fa-heart"></i>
+                                Savoir-être
+                            </th>
+                            <th class="savoir-faire-col">
+                                <i class="fas fa-tools"></i>
+                                Savoir-faire
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="experience-row" data-project="robot">
+                            <td class="project-cell">
+                                <div class="project-info">
+                                    <div class="project-icon">
+                                        <i class="fas fa-robot"></i>
+                                    </div>
+                                    <span class="project-name">Projet Robot</span>
+                                </div>
+                            </td>
+                            <td class="content-cell savoir-cell">
+                                <div class="cell-content">
+                                    <p>Découverte des capteurs, logiciels de codage et outils d'usinage</p>
+                                </div>
+                            </td>
+                            <td class="content-cell savoir-etre-cell">
+                                <div class="cell-content">
+                                    <p>Esprit de groupe et répartition des tâches</p>
+                                </div>
+                            </td>
+                            <td class="content-cell savoir-faire-cell">
+                                <div class="cell-content">
+                                    <p>Codage, usinage, dessins techniques et montage électrique</p>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        <tr class="experience-row" data-project="i2m">
+                            <td class="project-cell">
+                                <div class="project-info">
+                                    <div class="project-icon">
+                                        <i class="fas fa-industry"></i>
+                                    </div>
+                                    <span class="project-name">Stage I2M</span>
+                                </div>
+                            </td>
+                            <td class="content-cell savoir-cell">
+                                <div class="cell-content">
+                                    <p>Découverte d'un laboratoire en mécanique des matériaux, langage technique et du logiciel Fusion 360</p>
+                                </div>
+                            </td>
+                            <td class="content-cell savoir-etre-cell">
+                                <div class="cell-content">
+                                    <p>Persévérance, organisation, gestion du temps et communication en équipe professionnelle</p>
+                                </div>
+                            </td>
+                            <td class="content-cell savoir-faire-cell">
+                                <div class="cell-content">
+                                    <p>Modélisation, conception et rétroconception, prise de mesure et outils de simulation mécanique</p>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        <tr class="experience-row" data-project="musique">
+                            <td class="project-cell">
+                                <div class="project-info">
+                                    <div class="project-icon">
+                                        <i class="fas fa-music"></i>
+                                    </div>
+                                    <span class="project-name">Composition Musicale</span>
+                                </div>
+                            </td>
+                            <td class="content-cell savoir-cell">
+                                <div class="cell-content">
+                                    <p>Connaissances musicales, rythme, structure d'un morceau, découverte de logiciels</p>
+                                </div>
+                            </td>
+                            <td class="content-cell savoir-etre-cell">
+                                <div class="cell-content">
+                                    <p>Créativité et ouverture d'esprit, patience et persévérance, esprit critique</p>
+                                </div>
+                            </td>
+                            <td class="content-cell savoir-faire-cell">
+                                <div class="cell-content">
+                                    <p>Prise en main d'un logiciel, création et composition musicale, mixage, gestion de projet</p>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        <tr class="experience-row" data-project="web">
+                            <td class="project-cell">
+                                <div class="project-info">
+                                    <div class="project-icon">
+                                        <i class="fas fa-code"></i>
+                                    </div>
+                                    <span class="project-name">Création de Site Web</span>
+                                </div>
+                            </td>
+                            <td class="content-cell savoir-cell">
+                                <div class="cell-content">
+                                    <p>Connaissances de base en CSS et JavaScript, design et ergonomie web, culture numérique</p>
+                                </div>
+                            </td>
+                            <td class="content-cell savoir-etre-cell">
+                                <div class="cell-content">
+                                    <p>Rigueur et organisation, sens de la créativité et de l'esthétique</p>
+                                </div>
+                            </td>
+                            <td class="content-cell savoir-faire-cell">
+                                <div class="cell-content">
+                                    <p>Prise en main d'outils et environnements de développement, conception et architecture d'un site</p>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        <tr class="experience-row" data-project="design">
+                            <td class="project-cell">
+                                <div class="project-info">
+                                    <div class="project-icon">
+                                        <i class="fas fa-paint-brush"></i>
+                                    </div>
+                                    <span class="project-name">Dessins et Design</span>
+                                </div>
+                            </td>
+                            <td class="content-cell savoir-cell">
+                                <div class="cell-content">
+                                    <p>Connaissances en techniques de dessin, bases du design graphique</p>
+                                </div>
+                            </td>
+                            <td class="content-cell savoir-etre-cell">
+                                <div class="cell-content">
+                                    <p>Créativité et imagination, sens esthétique et sensibilité artistique</p>
+                                </div>
+                            </td>
+                            <td class="content-cell savoir-faire-cell">
+                                <div class="cell-content">
+                                    <p>Réalisation de croquis et esquisses (concepts, prototypes), maîtrise d'outils de dessin traditionnels/numériques</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Missions - NOUVELLE VERSION AVEC ANIMATIONS SPECTACULAIRES -->
+    <section id="missions" class="missions-new">
+        <div class="container-full">
+            <h2 class="section-title-missions">Fiches Missions</h2>
+            
+            <!-- ANIMATION ROBOT : Voiture RC Buggy -->
+            <div class="scroll-animation-section robot-scroll-animation" data-section="robot">
+                <div class="animation-container">
+                    <svg class="rc-buggy-svg" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Piste avec marquage -->
+                        <line x1="0" y1="280" x2="1200" y2="280" stroke="#333" stroke-width="3"/>
+                        <line x1="0" y1="285" x2="1200" y2="285" stroke="#FFD700" stroke-width="1" stroke-dasharray="30,20"/>
+                        
+                        <!-- Groupe de la voiture (translate contrôlé par JS) -->
+                        <g id="buggy-group" transform="translate(100, 0)">
+                            <!-- Ombre -->
+                            <ellipse cx="0" cy="290" rx="90" ry="12" fill="rgba(0,0,0,0.3)"/>
+                            
+                            <!-- Châssis principal -->
+                            <path d="M -60 250 L -50 230 L 50 230 L 60 250 L 55 260 L -55 260 Z" 
+                                  fill="#1a3a5a" stroke="#2C5AA0" stroke-width="2" stroke-linejoin="round"/>
+                            
+                            <!-- Carrosserie bleu dégradé -->
+                            <path d="M -45 235 L -35 215 Q -20 205 0 205 Q 20 205 35 215 L 45 235 Z" 
+                                  fill="url(#buggyBW)" stroke="#2C5AA0" stroke-width="2" stroke-linejoin="round"/>
+                            
+                            <!-- Aileron arrière -->
+                            <rect x="52" y="220" width="15" height="3" fill="#1a1a1a"/>
+                            <path d="M 52 220 L 67 220 L 72 200 L 67 200 L 52 210 Z" 
+                                  fill="url(#buggyBW)" stroke="#000" stroke-width="1.5"/>
+                            
+                            <!-- Vitres -->
+                            <ellipse cx="-15" cy="220" rx="12" ry="10" fill="rgba(100,150,200,0.7)" stroke="#000"/>
+                            <ellipse cx="15" cy="220" rx="12" ry="10" fill="rgba(100,150,200,0.7)" stroke="#000"/>
+                            
+                            <!-- Numéro -->
+                            <text x="-5" y="248" font-family="Arial" font-size="14" font-weight="bold" fill="#FFD700">03</text>
+                            
+                            <!-- Roues arrière (contrôlées par JS) -->
+                            <g id="wheel-rear-left" transform="translate(-45, 270)">
+                                <circle cx="0" cy="0" r="22" fill="#1a1a1a"/>
+                                <circle cx="0" cy="0" r="18" fill="#333"/>
+                                <!-- Jante -->
+                                <circle cx="0" cy="0" r="12" fill="#ddd"/>
+                                <circle cx="0" cy="0" r="6" fill="#666"/>
+                                <!-- Rayons -->
+                                <line x1="-10" y1="0" x2="10" y2="0" stroke="#888" stroke-width="2"/>
+                                <line x1="0" y1="-10" x2="0" y2="10" stroke="#888" stroke-width="2"/>
+                                <!-- Crampons -->
+                                <g class="tire-treads">
+                                    <rect x="-2" y="-23" width="4" height="5" fill="#000" rx="1"/>
+                                    <rect x="-2" y="18" width="4" height="5" fill="#000" rx="1"/>
+                                    <rect x="-23" y="-2" width="5" height="4" fill="#000" rx="1"/>
+                                    <rect x="18" y="-2" width="5" height="4" fill="#000" rx="1"/>
+                                    <rect x="-17" y="-15" width="4" height="4" fill="#000" rx="1"/>
+                                    <rect x="13" y="-15" width="4" height="4" fill="#000" rx="1"/>
+                                    <rect x="-17" y="11" width="4" height="4" fill="#000" rx="1"/>
+                                    <rect x="13" y="11" width="4" height="4" fill="#000" rx="1"/>
+                                </g>
+                            </g>
+                            
+                            <g id="wheel-rear-right" transform="translate(-45, 270)">
+                                <circle cx="0" cy="0" r="22" fill="#1a1a1a"/>
+                                <circle cx="0" cy="0" r="18" fill="#333"/>
+                                <circle cx="0" cy="0" r="12" fill="#ddd"/>
+                                <circle cx="0" cy="0" r="6" fill="#666"/>
+                                <line x1="-10" y1="0" x2="10" y2="0" stroke="#888" stroke-width="2"/>
+                                <line x1="0" y1="-10" x2="0" y2="10" stroke="#888" stroke-width="2"/>
+                                <g class="tire-treads">
+                                    <rect x="-2" y="-23" width="4" height="5" fill="#000" rx="1"/>
+                                    <rect x="-2" y="18" width="4" height="5" fill="#000" rx="1"/>
+                                    <rect x="-23" y="-2" width="5" height="4" fill="#000" rx="1"/>
+                                    <rect x="18" y="-2" width="5" height="4" fill="#000" rx="1"/>
+                                    <rect x="-17" y="-15" width="4" height="4" fill="#000" rx="1"/>
+                                    <rect x="13" y="-15" width="4" height="4" fill="#000" rx="1"/>
+                                    <rect x="-17" y="11" width="4" height="4" fill="#000" rx="1"/>
+                                    <rect x="13" y="11" width="4" height="4" fill="#000" rx="1"/>
+                                </g>
+                            </g>
+                            
+                            <!-- Roues avant -->
+                            <g id="wheel-front-left" transform="translate(40, 270)">
+                                <circle cx="0" cy="0" r="22" fill="#1a1a1a"/>
+                                <circle cx="0" cy="0" r="18" fill="#333"/>
+                                <circle cx="0" cy="0" r="12" fill="#ddd"/>
+                                <circle cx="0" cy="0" r="6" fill="#666"/>
+                                <line x1="-10" y1="0" x2="10" y2="0" stroke="#888" stroke-width="2"/>
+                                <line x1="0" y1="-10" x2="0" y2="10" stroke="#888" stroke-width="2"/>
+                                <g class="tire-treads">
+                                    <rect x="-2" y="-23" width="4" height="5" fill="#000" rx="1"/>
+                                    <rect x="-2" y="18" width="4" height="5" fill="#000" rx="1"/>
+                                    <rect x="-23" y="-2" width="5" height="4" fill="#000" rx="1"/>
+                                    <rect x="18" y="-2" width="5" height="4" fill="#000" rx="1"/>
+                                    <rect x="-17" y="-15" width="4" height="4" fill="#000" rx="1"/>
+                                    <rect x="13" y="-15" width="4" height="4" fill="#000" rx="1"/>
+                                    <rect x="-17" y="11" width="4" height="4" fill="#000" rx="1"/>
+                                    <rect x="13" y="11" width="4" height="4" fill="#000" rx="1"/>
+                                </g>
+                            </g>
+                            
+                            <g id="wheel-front-right" transform="translate(40, 270)">
+                                <circle cx="0" cy="0" r="22" fill="#1a1a1a"/>
+                                <circle cx="0" cy="0" r="18" fill="#333"/>
+                                <circle cx="0" cy="0" r="12" fill="#ddd"/>
+                                <circle cx="0" cy="0" r="6" fill="#666"/>
+                                <line x1="-10" y1="0" x2="10" y2="0" stroke="#888" stroke-width="2"/>
+                                <line x1="0" y1="-10" x2="0" y2="10" stroke="#888" stroke-width="2"/>
+                                <g class="tire-treads">
+                                    <rect x="-2" y="-23" width="4" height="5" fill="#000" rx="1"/>
+                                    <rect x="-2" y="18" width="4" height="5" fill="#000" rx="1"/>
+                                    <rect x="-23" y="-2" width="5" height="4" fill="#000" rx="1"/>
+                                    <rect x="18" y="-2" width="5" height="4" fill="#000" rx="1"/>
+                                    <rect x="-17" y="-15" width="4" height="4" fill="#000" rx="1"/>
+                                    <rect x="13" y="-15" width="4" height="4" fill="#000" rx="1"/>
+                                    <rect x="-17" y="11" width="4" height="4" fill="#000" rx="1"/>
+                                    <rect x="13" y="11" width="4" height="4" fill="#000" rx="1"/>
+                                </g>
+                            </g>
+                            
+                            <!-- Amortisseurs -->
+                            <line x1="-45" y1="260" x2="-45" y2="248" stroke="#FF6B6B" stroke-width="3"/>
+                            <line x1="40" y1="260" x2="40" y2="248" stroke="#FF6B6B" stroke-width="3"/>
+                        </g>
+                        
+                        <!-- Particules de poussière -->
+                        <g id="dust-particles"></g>
+                        
+                        <!-- Gradients -->
+                        <defs>
+                            <linearGradient id="buggyBW" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#2C5AA0;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Mission Robot TRR -->
+            <div class="mission-fiche robot-fiche">
+                <div class="fiche-images-float">
+                    <img src="PHOTO/ROBOT1.jpg" alt="Robot TRR" class="fiche-img">
+                    <img src="PHOTO/ROBOT2.jpg" alt="Robot TRR" class="fiche-img">
+                </div>
+                <div class="fiche-content">
+                    <h3><i class="fas fa-robot"></i> Projet Robot TRR</h3>
+                    
+                    <div class="fiche-section">
+                        <h4><i class="fas fa-info-circle"></i> Contexte</h4>
+                        <p>Le projet robot TRR est un projet consistant à participer à une course de robots autonomes, et devant suivre un parcours ainsi qu'éviter des obstacles.</p>
+                    </div>
+                    
+                    <div class="fiche-section">
+                        <h4><i class="fas fa-tasks"></i> Activités</h4>
+                        <p>Codage, usinage, montage et modélisation du robot, phases de test et gestion de projet.</p>
+                    </div>
+                    
+                    <div class="fiche-section">
+                        <h4><i class="fas fa-tools"></i> Moyens</h4>
+                        <p>Utilisation du matériel mis à disposition, création de pièces, usinage, soudage, etc.</p>
+                    </div>
+                    
+                    <div class="fiche-section">
+                        <h4><i class="fas fa-exclamation-triangle"></i> Contraintes</h4>
+                        <p>Contrainte d'autonomie totale, le robot doit pouvoir réaliser le parcours et éviter les obstacles sans l'intervention de quiconque.</p>
+                    </div>
+                    
+                    <div class="fiche-section">
+                        <h4><i class="fas fa-star"></i> Faits Marquants</h4>
+                        <p>Mauvais choix des moteurs donc peu de puissance.</p>
+                    </div>
+                    
+                    <div class="fiche-section">
+                        <h4><i class="fas fa-trophy"></i> Résultats Personnels</h4>
+                        <p>La conception d'un châssis et des pièces, ainsi que le code du robot ayant participé à la TOULOUSE ROBOT RACE.</p>
+                    </div>
+                    
+                    <div class="fiche-section">
+                        <h4><i class="fas fa-heart"></i> Ce que j'ai le plus aimé</h4>
+                        <p>La partie montage et phase de tests car dynamique.</p>
+                    </div>
+                    
+                    <div class="fiche-section">
+                        <h4><i class="fas fa-thumbs-down"></i> Le moins aimé</h4>
+                        <p>La partie codage, beaucoup d'erreurs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ANIMATION I2M : Train d'engrenages -->
+            <div class="scroll-animation-section i2m-scroll-animation" data-section="i2m">
+                <div class="animation-container">
+                    <svg class="gears-train-svg" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Base mécanique -->
+                        <rect x="50" y="320" width="1100" height="8" fill="#333" stroke="#000" stroke-width="2"/>
+                        
+                        <!-- Engrenage 1 (Grand gauche) - 12 dents -->
+                        <g id="gear-1" transform="translate(150, 250)" data-rotation="0">
+                            <circle cx="0" cy="0" r="62" fill="url(#gearGrad1)" stroke="#000" stroke-width="3"/>
+                            <!-- Dents -->
+                            <g id="teeth-1">
+                                <rect x="-6" y="-68" width="12" height="12" fill="#555" stroke="#000" stroke-width="1.5" rx="2"/>
+                                <rect x="-6" y="-68" width="12" height="12" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(30 0 0)"/>
+                                <rect x="-6" y="-68" width="12" height="12" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(60 0 0)"/>
+                                <rect x="-6" y="-68" width="12" height="12" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(90 0 0)"/>
+                                <rect x="-6" y="-68" width="12" height="12" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(120 0 0)"/>
+                                <rect x="-6" y="-68" width="12" height="12" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(150 0 0)"/>
+                                <rect x="-6" y="-68" width="12" height="12" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(180 0 0)"/>
+                                <rect x="-6" y="-68" width="12" height="12" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(210 0 0)"/>
+                                <rect x="-6" y="-68" width="12" height="12" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(240 0 0)"/>
+                                <rect x="-6" y="-68" width="12" height="12" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(270 0 0)"/>
+                                <rect x="-6" y="-68" width="12" height="12" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(300 0 0)"/>
+                                <rect x="-6" y="-68" width="12" height="12" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(330 0 0)"/>
+                            </g>
+                            <circle cx="0" cy="0" r="35" fill="#888"/>
+                            <circle cx="0" cy="0" r="15" fill="#333"/>
+                            <circle cx="0" cy="0" r="8" fill="#666"/>
+                        </g>
+                        
+                        <!-- Engrenage 2 (Moyen milieu-gauche) - 8 dents -->
+                        <g id="gear-2" transform="translate(280, 200)" data-rotation="0">
+                            <circle cx="0" cy="0" r="42" fill="url(#gearGrad2)" stroke="#000" stroke-width="3"/>
+                            <g id="teeth-2">
+                                <rect x="-5" y="-48" width="10" height="10" fill="#555" stroke="#000" stroke-width="1.5" rx="2"/>
+                                <rect x="-5" y="-48" width="10" height="10" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(45 0 0)"/>
+                                <rect x="-5" y="-48" width="10" height="10" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(90 0 0)"/>
+                                <rect x="-5" y="-48" width="10" height="10" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(135 0 0)"/>
+                                <rect x="-5" y="-48" width="10" height="10" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(180 0 0)"/>
+                                <rect x="-5" y="-48" width="10" height="10" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(225 0 0)"/>
+                                <rect x="-5" y="-48" width="10" height="10" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(270 0 0)"/>
+                                <rect x="-5" y="-48" width="10" height="10" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(315 0 0)"/>
+                            </g>
+                            <circle cx="0" cy="0" r="25" fill="#888"/>
+                            <circle cx="0" cy="0" r="12" fill="#333"/>
+                            <circle cx="0" cy="0" r="6" fill="#666"/>
+                        </g>
+                        
+                        <!-- Engrenage 3 (Petit haut) - 6 dents -->
+                        <g id="gear-3" transform="translate(350, 130)" data-rotation="0">
+                            <circle cx="0" cy="0" r="32" fill="url(#gearGrad3)" stroke="#000" stroke-width="2.5"/>
+                            <g id="teeth-3">
+                                <rect x="-4" y="-37" width="8" height="9" fill="#555" stroke="#000" stroke-width="1.5" rx="2"/>
+                                <rect x="-4" y="-37" width="8" height="9" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(60 0 0)"/>
+                                <rect x="-4" y="-37" width="8" height="9" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(120 0 0)"/>
+                                <rect x="-4" y="-37" width="8" height="9" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(180 0 0)"/>
+                                <rect x="-4" y="-37" width="8" height="9" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(240 0 0)"/>
+                                <rect x="-4" y="-37" width="8" height="9" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(300 0 0)"/>
+                            </g>
+                            <circle cx="0" cy="0" r="18" fill="#888"/>
+                            <circle cx="0" cy="0" r="9" fill="#333"/>
+                            <circle cx="0" cy="0" r="5" fill="#666"/>
+                        </g>
+                        
+                        <!-- Engrenage 4 (Moyen centre) - 10 dents -->
+                        <g id="gear-4" transform="translate(480, 220)" data-rotation="0">
+                            <circle cx="0" cy="0" r="50" fill="url(#gearGrad4)" stroke="#000" stroke-width="3"/>
+                            <g id="teeth-4">
+                                <rect x="-5" y="-56" width="10" height="11" fill="#555" stroke="#000" stroke-width="1.5" rx="2"/>
+                                <rect x="-5" y="-56" width="10" height="11" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(36 0 0)"/>
+                                <rect x="-5" y="-56" width="10" height="11" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(72 0 0)"/>
+                                <rect x="-5" y="-56" width="10" height="11" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(108 0 0)"/>
+                                <rect x="-5" y="-56" width="10" height="11" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(144 0 0)"/>
+                                <rect x="-5" y="-56" width="10" height="11" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(180 0 0)"/>
+                                <rect x="-5" y="-56" width="10" height="11" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(216 0 0)"/>
+                                <rect x="-5" y="-56" width="10" height="11" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(252 0 0)"/>
+                                <rect x="-5" y="-56" width="10" height="11" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(288 0 0)"/>
+                                <rect x="-5" y="-56" width="10" height="11" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(324 0 0)"/>
+                            </g>
+                            <circle cx="0" cy="0" r="30" fill="#888"/>
+                            <circle cx="0" cy="0" r="14" fill="#333"/>
+                            <circle cx="0" cy="0" r="7" fill="#666"/>
+                        </g>
+                        
+                        <!-- Engrenage 5 (Petit bas) - 6 dents -->
+                        <g id="gear-5" transform="translate(600, 280)" data-rotation="0">
+                            <circle cx="0" cy="0" r="32" fill="url(#gearGrad5)" stroke="#000" stroke-width="2.5"/>
+                            <g id="teeth-5">
+                                <rect x="-4" y="-37" width="8" height="9" fill="#555" stroke="#000" stroke-width="1.5" rx="2"/>
+                                <rect x="-4" y="-37" width="8" height="9" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(60 0 0)"/>
+                                <rect x="-4" y="-37" width="8" height="9" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(120 0 0)"/>
+                                <rect x="-4" y="-37" width="8" height="9" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(180 0 0)"/>
+                                <rect x="-4" y="-37" width="8" height="9" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(240 0 0)"/>
+                                <rect x="-4" y="-37" width="8" height="9" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(300 0 0)"/>
+                            </g>
+                            <circle cx="0" cy="0" r="18" fill="#888"/>
+                            <circle cx="0" cy="0" r="9" fill="#333"/>
+                            <circle cx="0" cy="0" r="5" fill="#666"/>
+                        </g>
+                        
+                        <!-- Engrenage 6 (Grand droite) - 12 dents -->
+                        <g id="gear-6" transform="translate(750, 230)" data-rotation="0">
+                            <circle cx="0" cy="0" r="62" fill="url(#gearGrad6)" stroke="#000" stroke-width="3"/>
+                            <g id="teeth-6">
+                                <rect x="-6" y="-68" width="12" height="12" fill="#555" stroke="#000" stroke-width="1.5" rx="2"/>
+                                <rect x="-6" y="-68" width="12" height="12" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(30 0 0)"/>
+                                <rect x="-6" y="-68" width="12" height="12" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(60 0 0)"/>
+                                <rect x="-6" y="-68" width="12" height="12" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(90 0 0)"/>
+                                <rect x="-6" y="-68" width="12" height="12" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(120 0 0)"/>
+                                <rect x="-6" y="-68" width="12" height="12" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(150 0 0)"/>
+                                <rect x="-6" y="-68" width="12" height="12" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(180 0 0)"/>
+                                <rect x="-6" y="-68" width="12" height="12" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(210 0 0)"/>
+                                <rect x="-6" y="-68" width="12" height="12" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(240 0 0)"/>
+                                <rect x="-6" y="-68" width="12" height="12" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(270 0 0)"/>
+                                <rect x="-6" y="-68" width="12" height="12" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(300 0 0)"/>
+                                <rect x="-6" y="-68" width="12" height="12" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(330 0 0)"/>
+                            </g>
+                            <circle cx="0" cy="0" r="35" fill="#888"/>
+                            <circle cx="0" cy="0" r="15" fill="#333"/>
+                            <circle cx="0" cy="0" r="8" fill="#666"/>
+                        </g>
+                        
+                        <!-- Engrenage 7 (Moyen milieu-droite) - 8 dents -->
+                        <g id="gear-7" transform="translate(880, 180)" data-rotation="0">
+                            <circle cx="0" cy="0" r="42" fill="url(#gearGrad7)" stroke="#000" stroke-width="3"/>
+                            <g id="teeth-7">
+                                <rect x="-5" y="-48" width="10" height="10" fill="#555" stroke="#000" stroke-width="1.5" rx="2"/>
+                                <rect x="-5" y="-48" width="10" height="10" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(45 0 0)"/>
+                                <rect x="-5" y="-48" width="10" height="10" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(90 0 0)"/>
+                                <rect x="-5" y="-48" width="10" height="10" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(135 0 0)"/>
+                                <rect x="-5" y="-48" width="10" height="10" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(180 0 0)"/>
+                                <rect x="-5" y="-48" width="10" height="10" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(225 0 0)"/>
+                                <rect x="-5" y="-48" width="10" height="10" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(270 0 0)"/>
+                                <rect x="-5" y="-48" width="10" height="10" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(315 0 0)"/>
+                            </g>
+                            <circle cx="0" cy="0" r="25" fill="#888"/>
+                            <circle cx="0" cy="0" r="12" fill="#333"/>
+                            <circle cx="0" cy="0" r="6" fill="#666"/>
+                        </g>
+                        
+                        <!-- Engrenage 8 (Petit haut-droite) - 6 dents -->
+                        <g id="gear-8" transform="translate(1000, 240)" data-rotation="0">
+                            <circle cx="0" cy="0" r="32" fill="url(#gearGrad8)" stroke="#000" stroke-width="2.5"/>
+                            <g id="teeth-8">
+                                <rect x="-4" y="-37" width="8" height="9" fill="#555" stroke="#000" stroke-width="1.5" rx="2"/>
+                                <rect x="-4" y="-37" width="8" height="9" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(60 0 0)"/>
+                                <rect x="-4" y="-37" width="8" height="9" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(120 0 0)"/>
+                                <rect x="-4" y="-37" width="8" height="9" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(180 0 0)"/>
+                                <rect x="-4" y="-37" width="8" height="9" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(240 0 0)"/>
+                                <rect x="-4" y="-37" width="8" height="9" fill="#555" stroke="#000" stroke-width="1.5" rx="2" transform="rotate(300 0 0)"/>
+                            </g>
+                            <circle cx="0" cy="0" r="18" fill="#888"/>
+                            <circle cx="0" cy="0" r="9" fill="#333"/>
+                            <circle cx="0" cy="0" r="5" fill="#666"/>
+                        </g>
+                        
+                        <!-- Flèches de rotation -->
+                        <path d="M 150 170 A 30 30 0 0 1 170 185" stroke="#FF6B6B" stroke-width="3" fill="none" marker-end="url(#arrowRed)"/>
+                        <path d="M 280 140 A 25 25 0 0 0 265 155" stroke="#4ECDC4" stroke-width="2.5" fill="none" marker-end="url(#arrowCyan)"/>
+                        
+                        <!-- Gradients - Tous en dégradé de bleu -->
+                        <defs>
+                            <radialGradient id="gearGrad1">
+                                <stop offset="30%" stop-color="#6BB6FF"/>
+                                <stop offset="100%" stop-color="#4A90E2"/>
+                            </radialGradient>
+                            <radialGradient id="gearGrad2">
+                                <stop offset="30%" stop-color="#5AA5E8"/>
+                                <stop offset="100%" stop-color="#3D7BBD"/>
+                            </radialGradient>
+                            <radialGradient id="gearGrad3">
+                                <stop offset="30%" stop-color="#7DC8FF"/>
+                                <stop offset="100%" stop-color="#4A9EE2"/>
+                            </radialGradient>
+                            <radialGradient id="gearGrad4">
+                                <stop offset="30%" stop-color="#4FAEF5"/>
+                                <stop offset="100%" stop-color="#2C7DC0"/>
+                            </radialGradient>
+                            <radialGradient id="gearGrad5">
+                                <stop offset="30%" stop-color="#88CCFF"/>
+                                <stop offset="100%" stop-color="#5099D9"/>
+                            </radialGradient>
+                            <radialGradient id="gearGrad6">
+                                <stop offset="30%" stop-color="#5EADEB"/>
+                                <stop offset="100%" stop-color="#3578B8"/>
+                            </radialGradient>
+                            <radialGradient id="gearGrad7">
+                                <stop offset="30%" stop-color="#72B8F5"/>
+                                <stop offset="100%" stop-color="#4285C9"/>
+                            </radialGradient>
+                            <radialGradient id="gearGrad8">
+                                <stop offset="30%" stop-color="#91D4FF"/>
+                                <stop offset="100%" stop-color="#5AA2D6"/>
+                            </radialGradient>
+                            <marker id="arrowRed" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+                                <path d="M0,0 L0,6 L9,3 z" fill="#FF6B6B"/>
+                            </marker>
+                            <marker id="arrowCyan" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+                                <path d="M0,0 L0,6 L9,3 z" fill="#4ECDC4"/>
+                            </marker>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Mission I2M -->
+            <div class="mission-fiche i2m-fiche">
+                <div class="fiche-images-float">
+                    <img src="PHOTO/I2M 1.png" alt="I2M Project 1" class="fiche-img">
+                    <img src="PHOTO/I2M 2.png" alt="I2M Project 2" class="fiche-img">
+                    <img src="PHOTO/I2M 3.png" alt="I2M Project 3" class="fiche-img">
+                </div>
+                <div class="fiche-content">
+                    <h3><i class="fas fa-industry"></i> Stage I2M</h3>
+                    
+                    <div class="fiche-section">
+                        <h4><i class="fas fa-info-circle"></i> Contexte</h4>
+                        <p>Le stage réalisé s'est effectué au sein de la plateforme DUMAS du laboratoire I2M Bordeaux. Le contexte m'a été présenté dès le début, ma tâche était de concevoir une structure s'ajoutant à celle d'un vérin haute vitesse, et permettant de soulever et supporter de lourdes charges, allant jusqu'à 1T et pouvant déplacer la charge sur l'axe X.</p>
+                    </div>
+                    
+                    <div class="fiche-section">
+                        <h4><i class="fas fa-tasks"></i> Activités</h4>
+                        <p>Conception et rétro-conception de structures mécaniques dans le labo I2M.</p>
+                    </div>
+                    
+                    <div class="fiche-section">
+                        <h4><i class="fas fa-tools"></i> Moyens</h4>
+                        <p>Moyens matériels pour concevoir un moyen de levage pour vérin dynamique.</p>
+                    </div>
+                    
+                    <div class="fiche-section">
+                        <h4><i class="fas fa-exclamation-triangle"></i> Contraintes</h4>
+                        <p>Prix, contraintes de poids (doit supporter 1T).</p>
+                    </div>
+                    
+                    <div class="fiche-section">
+                        <h4><i class="fas fa-star"></i> Faits Marquants</h4>
+                        <p>Beaucoup d'erreurs et de retours au départ, découverte totale du logiciel FUSION 360.</p>
+                    </div>
+                    
+                    <div class="fiche-section">
+                        <h4><i class="fas fa-trophy"></i> Résultats Personnels</h4>
+                        <p>J'ai conçu une structure au-dessus d'un vérin dynamique permettant de déplacer un palan sur 1 axe et que celui-ci porte 1T de charge.</p>
+                    </div>
+                    
+                    <div class="fiche-section">
+                        <h4><i class="fas fa-heart"></i> Ce que j'ai le plus aimé</h4>
+                        <p>La conception 3D.</p>
+                    </div>
+                    
+                    <div class="fiche-section">
+                        <h4><i class="fas fa-thumbs-down"></i> Le moins aimé</h4>
+                        <p>Les mesures physiques.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ANIMATION MUSIQUE : Piano Roll FL Studio -->
+            <div class="scroll-animation-section music-scroll-animation" data-section="music">
+                <div class="animation-container">
+                    <svg class="piano-roll-svg" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg">
+                        
+                        <!-- Notes MIDI style FL Studio (rectangles bleus) -->
+                        <g id="midi-notes">
+                            <!-- Mesure 1 -->
+                            <rect x="100" y="120" width="60" height="35" fill="#4A90E2" stroke="#2C5AA0" stroke-width="2" rx="5" opacity="0.9"/>
+                            <rect x="175" y="200" width="70" height="35" fill="#5AA5E8" stroke="#3D7BBD" stroke-width="2" rx="5" opacity="0.9"/>
+                            
+                            <!-- Mesure 2 -->
+                            <rect x="250" y="80" width="50" height="35" fill="#6BB6FF" stroke="#4A90E2" stroke-width="2" rx="5" opacity="0.9"/>
+                            <rect x="310" y="160" width="85" height="35" fill="#7DC8FF" stroke="#5AA2D6" stroke-width="2" rx="5" opacity="0.9"/>
+                            
+                            <!-- Mesure 3 -->
+                            <rect x="400" y="240" width="65" height="35" fill="#4FAEF5" stroke="#2C7DC0" stroke-width="2" rx="5" opacity="0.9"/>
+                            <rect x="475" y="120" width="70" height="35" fill="#5EADEB" stroke="#3578B8" stroke-width="2" rx="5" opacity="0.9"/>
+                            
+                            <!-- Mesure 4 -->
+                            <rect x="550" y="200" width="60" height="35" fill="#72B8F5" stroke="#4285C9" stroke-width="2" rx="5" opacity="0.9"/>
+                            <rect x="625" y="80" width="70" height="35" fill="#88CCFF" stroke="#5099D9" stroke-width="2" rx="5" opacity="0.9"/>
+                            
+                            <!-- Mesure 5 -->
+                            <rect x="700" y="160" width="55" height="35" fill="#4A90E2" stroke="#2C5AA0" stroke-width="2" rx="5" opacity="0.9"/>
+                            <rect x="765" y="280" width="80" height="35" fill="#5AA5E8" stroke="#3D7BBD" stroke-width="2" rx="5" opacity="0.9"/>
+                            
+                            <!-- Mesure 6 -->
+                            <rect x="850" y="120" width="65" height="35" fill="#6BB6FF" stroke="#4A90E2" stroke-width="2" rx="5" opacity="0.9"/>
+                            <rect x="925" y="200" width="70" height="35" fill="#7DC8FF" stroke="#5AA2D6" stroke-width="2" rx="5" opacity="0.9"/>
+                            
+                            <!-- Mesure 7 -->
+                            <rect x="1000" y="160" width="75" height="35" fill="#4FAEF5" stroke="#2C7DC0" stroke-width="2" rx="5" opacity="0.9"/>
+                            <rect x="1085" y="240" width="60" height="35" fill="#5EADEB" stroke="#3578B8" stroke-width="2" rx="5" opacity="0.9"/>
+                            
+                            <!-- Notes supplémentaires pour harmonie (bleu clair) -->
+                            <rect x="120" y="280" width="40" height="35" fill="#91D4FF" stroke="#5AA2D6" stroke-width="2" rx="5" opacity="0.85"/>
+                            <rect x="280" y="240" width="45" height="35" fill="#88CCFF" stroke="#5099D9" stroke-width="2" rx="5" opacity="0.85"/>
+                            <rect x="430" y="320" width="50" height="35" fill="#72B8F5" stroke="#4285C9" stroke-width="2" rx="5" opacity="0.85"/>
+                            <rect x="580" y="280" width="55" height="35" fill="#91D4FF" stroke="#5AA2D6" stroke-width="2" rx="5" opacity="0.85"/>
+                            <rect x="730" y="240" width="45" height="35" fill="#88CCFF" stroke="#5099D9" stroke-width="2" rx="5" opacity="0.85"/>
+                            <rect x="880" y="320" width="50" height="35" fill="#72B8F5" stroke="#4285C9" stroke-width="2" rx="5" opacity="0.85"/>
+                            
+                            <!-- Basse (notes basses bleu foncé) -->
+                            <rect x="140" y="360" width="100" height="35" fill="#2C5AA0" stroke="#1A3A6A" stroke-width="2" rx="5" opacity="0.9"/>
+                            <rect x="430" y="360" width="110" height="35" fill="#3D7BBD" stroke="#2C5AA0" stroke-width="2" rx="5" opacity="0.9"/>
+                            <rect x="730" y="360" width="105" height="35" fill="#2C5AA0" stroke="#1A3A6A" stroke-width="2" rx="5" opacity="0.9"/>
+                            <rect x="1020" y="360" width="95" height="35" fill="#3D7BBD" stroke="#2C5AA0" stroke-width="2" rx="5" opacity="0.9"/>
+                        </g>
+                        
+                        <!-- Playhead (tête de lecture rouge) -->
+                        <g id="playhead">
+                            <line x1="100" y1="0" x2="100" y2="400" stroke="#FF0844" stroke-width="3"/>
+                            <polygon points="95,0 105,0 100,15" fill="#FF0844"/>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Mission Création Musicale -->
+            <div class="mission-fiche music-fiche">
+                <div class="fiche-images-float">
+                    <img src="PHOTO/MUSIQUE 1.png" alt="Music Project" class="fiche-img">
+                    <img src="PHOTO/VINYLE 1.png" alt="Vinyl" class="fiche-img">
+                </div>
+                <div class="fiche-content">
+                    <h3><i class="fas fa-music"></i> Création Musicale</h3>
+                    
+                    <div class="fiche-section">
+                        <h4><i class="fas fa-info-circle"></i> Contexte</h4>
+                        <p>Étant passionné par la musique, ce projet s'est défini au fur et à mesure, commençant par la découverte de logiciels de MAO, la composition rythmique, l'apprentissage des accords et créations de mélodies, et enfin la structuration finie d'une musique et le mixage final.</p>
+                    </div>
+                    
+                    <div class="fiche-section">
+                        <h4><i class="fas fa-tasks"></i> Activités</h4>
+                        <p>Composition musicale sur le logiciel ABLETON LIVE 12.</p>
+                    </div>
+                    
+                    <div class="fiche-section">
+                        <h4><i class="fas fa-tools"></i> Moyens</h4>
+                        <p>Logiciel Ableton Live 12 Suite, FL Studio 24.</p>
+                    </div>
+                    
+                    <div class="fiche-section">
+                        <h4><i class="fas fa-star"></i> Faits Marquants</h4>
+                        <p>Découverte et apprentissage constant d'un domaine, recherche des outils et évolution exponentielle.</p>
+                    </div>
+                    
+                    <div class="fiche-section">
+                        <h4><i class="fas fa-trophy"></i> Résultats Personnels</h4>
+                        <p>2 projets musicaux aboutis et postés sur plateforme musicale.</p>
+                    </div>
+                    
+                    <div class="fiche-section">
+                        <h4><i class="fas fa-heart"></i> Ce que j'ai le plus aimé</h4>
+                        <p>Apprendre, créer pas à pas, composer des mélodies et apprendre les bases de la musique assistée par ordinateur.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:antoine.wirtz-berry@ensam.eu" style="color: inherit; text-decoration: none;">antoine.wirtz-berry@ensam.eu</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Téléphone</h3>
+                        <p>07 68 29 81 60</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Adresse</h3>
+                        <p>16 avenue de Collegno<br>33400 Talence</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <h3>LinkedIn</h3>
+                        <p>Connectons-nous !</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

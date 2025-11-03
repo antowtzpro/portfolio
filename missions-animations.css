@@ -1,0 +1,296 @@
+/* ========================================
+   NOUVELLE SECTION MISSIONS - ANIMATIONS SPECTACULAIRES
+   ======================================== */
+
+/* Section principale */
+.missions-new {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 4rem 0;
+    overflow-x: hidden;
+}
+
+.container-full {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.section-title-missions {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--gray-800);
+    margin-bottom: 4rem;
+    background: linear-gradient(135deg, var(--electric-blue), var(--royal-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ========================================
+   SECTIONS D'ANIMATION AU SCROLL
+   ======================================== */
+
+/* ========================================
+   SECTIONS ANIMATION IMMERSIVES (style Samsung)
+   ======================================== */
+
+.scroll-animation-section {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    /* Pas de background - utilise le fond de la page */
+}
+
+.animation-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* SVG plein écran sans délimitation */
+.rc-buggy-svg, .gears-train-svg, .piano-roll-svg {
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
+    background: transparent;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Effet quand la section est active (contrôlé par JS) */
+.scroll-animation-section.active {
+    background: radial-gradient(ellipse at center, rgba(255,255,255,0.05) 0%, transparent 70%);
+}
+
+.scroll-animation-section.active .rc-buggy-svg,
+.scroll-animation-section.active .gears-train-svg,
+.scroll-animation-section.active .piano-roll-svg {
+    transform: scale(1.02);
+}
+
+/* Piano roll : fond transparent avec grille subtile */
+.piano-roll-svg {
+    filter: drop-shadow(0 5px 20px rgba(0,0,0,0.1));
+}
+
+/* Les animations sont maintenant contrôlées par JavaScript */
+
+/* ========================================
+   FICHES MISSIONS - NOUVEAU LAYOUT
+   ======================================== */
+
+.mission-fiche {
+    display: flex;
+    gap: 3rem;
+    margin: 2rem 0;
+    padding: 3rem;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.mission-fiche.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Images flottantes à gauche */
+.fiche-images-float {
+    flex: 0 0 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+}
+
+.fiche-img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+}
+
+.fiche-img:hover {
+    transform: scale(1.05) rotate(2deg);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+/* Contenu à droite */
+.fiche-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.fiche-content h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--gray-800);
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+.fiche-content h3::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--electric-blue), var(--royal-blue));
+    border-radius: 2px;
+}
+
+.fiche-content h3 i {
+    margin-right: 1rem;
+    color: var(--electric-blue);
+}
+
+.fiche-section {
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 12px;
+    border-left: 4px solid var(--electric-blue);
+    transition: all 0.3s ease;
+}
+
+.fiche-section:hover {
+    transform: translateX(10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-left-color: var(--royal-blue);
+}
+
+.fiche-section h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--gray-800);
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.fiche-section h4 i {
+    color: var(--electric-blue);
+    font-size: 1.2rem;
+}
+
+.fiche-section p {
+    color: var(--gray-700);
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+/* Couleurs spécifiques par mission */
+.robot-fiche {
+    border-top: 5px solid #FF6B6B;
+}
+
+.robot-fiche .fiche-section {
+    border-left-color: #FF6B6B;
+}
+
+.robot-fiche .fiche-content h3::after {
+    background: linear-gradient(90deg, #FF6B6B, #FF8E53);
+}
+
+.i2m-fiche {
+    border-top: 5px solid #667eea;
+}
+
+.i2m-fiche .fiche-section {
+    border-left-color: #667eea;
+}
+
+.i2m-fiche .fiche-content h3::after {
+    background: linear-gradient(90deg, #667eea, #764ba2);
+}
+
+.music-fiche {
+    border-top: 5px solid #f093fb;
+}
+
+.music-fiche .fiche-section {
+    border-left-color: #f093fb;
+}
+
+.music-fiche .fiche-content h3::after {
+    background: linear-gradient(90deg, #f093fb, #f5576c);
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 1024px) {
+    .mission-fiche {
+        flex-direction: column;
+    }
+    
+    .fiche-images-float {
+        flex: 1;
+        flex-direction: row;
+        position: relative;
+        top: 0;
+        overflow-x: auto;
+    }
+    
+    .fiche-img {
+        min-width: 250px;
+    }
+    
+    .scroll-animation-section {
+        height: 60vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-title-missions {
+        font-size: 2rem;
+    }
+    
+    .fiche-content h3 {
+        font-size: 1.8rem;
+    }
+    
+    .mission-fiche {
+        padding: 2rem;
+        margin: 1.5rem 0;
+    }
+    
+    .car-body {
+        width: 80px;
+        height: 40px;
+    }
+    
+    .gear-container {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .big-gear {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .small-gear {
+        width: 40px;
+        height: 40px;
+    }
+}

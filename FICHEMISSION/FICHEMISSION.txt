@@ -1,0 +1,46 @@
+FICHEMISSION
+
+I2M stage
+Contexte: le stage réalisé s'est effectué au sein de la plateforme DUMAS du laboratoire I2M bordeaux. le contexte m'a été présenté dès le début, ma tâche était de concevoir une structure s'ajoutant a celle d'un verrin haute vitesse, et permettant de soulever et supporter de lourdes charges, allant jusqu'a 1T et pouvant déplacer la charge sur l'axe X
+Activités permanentes et ponctuelles:  Conception et rétroconception de structures mécaniques dans le labo I2M
+Moyens (matériels, financiers, humains,
+organisationnels) : moyens matériels pour concevoir un moyen de levage pour verrin dynamique  
+Contraintes (structurelles, externes, environnementales) prix, contraintes de poids( doit supporter 1 T)
+: 
+Faits marquants (facilitateurs ou contraignants sur 
+l’exercice de l’activité) : beaucoup d'erreurs et de retours au départ, découverte totale du logiciel FUSION360
+Savoirs / Savoir-Faire / Savoir-Être : base toi sur la partie savoir être. (pour l'IA)
+Résultats personnels (mes apports, ce que j’ai créé, 
+apporté, mis en place) : j'ai concu une structure au dessus d'un verrin dynamique permettant de déplacer un palan sur 1 axe et que celui ci porte 1T de charge.
+Ce que j’ai le plus aimé, pourquoi : la conception 3D
+Le moins aimé, pourquoi : les mesures physiques
+
+PROJET ROBOT
+Contexte: le projet robot TRR est un projet consistant a participer a une course de robots autonomes, et devant suivre un parcours ainsi qu'éviter des obstacles.
+Activités permanentes et ponctuelles  codage, usinage montage et modélisation du robot, phases de test et gestion de projet
+Moyens (matériels, financiers, humains, 
+organisationnels) : utilisation du matériel mis a disposition, création de pièces, usinage, soudage etc..
+Contraintes (structurelles, externes, environnementales) contrainte d'autonomie totale, le robot doit pouvoir réaliser le parcours et éviter les obstacles sans l'intervention de quiconque
+: 
+Faits marquants (facilitateurs ou contraignants sur 
+l’exercice de l’activité) : mauvais choix des moteurs donc peu de puissance
+Savoirs / Savoir-Faire / Savoir-Être : base toi sur la partie savoir être. (pour l'IA)
+Résultats personnels (mes apports, ce que j’ai créé, 
+apporté, mis en place) : la conception d'un chassis et des pièces, ainsi que le code du robot ayant participé à la TOULOUSE ROBOT RACE
+Ce que j’ai le plus aimé, pourquoi : la partie montage et phase de tests car dynamique
+Le moins aimé, pourquoi : la partie codage, beaucoup d'erreurs
+
+CREATION MUSIQUE
+Contexte: étant passionné par la musique, ce projet s'est définit au fur et à mesure, commencant par la découverte de logiciels de MAO, la composition rythmique, l'apprentissage des accords et créations de mélodies, et enfin la structuration finie d'une musique et le mixage final.
+Activités permanentes et ponctuelles:  composition musicale sur le logiciel ABLETON LIVE 12
+Moyens (matériels, financiers, humains, 
+organisationnels) : logiciel ableton live 12 suite, FL studio 24. 
+Contraintes (structurelles, externes, environnementales)  X
+: 
+Faits marquants (facilitateurs ou contraignants sur 
+l’exercice de l’activité) : découverte et apprentissage constant d'un domaine, recherche des outils et evolution exponentielle
+Savoirs / Savoir-Faire / Savoir-Être : base toi sur la partie savoir être. (pour l'IA)
+Résultats personnels (mes apports, ce que j’ai créé, 
+apporté, mis en place) : 2 projets musicaux aboutis et postés sur plateforme musicale
+Ce que j’ai le plus aimé, pourquoi : apprendre, créer pas à pas, composer des mélodies et apprendre les bases de la musique assistée par ordinateru
+Le moins aimé, pourquoi : X

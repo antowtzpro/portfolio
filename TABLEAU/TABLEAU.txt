@@ -1,0 +1,23 @@
+TABLEAU
+
+expériences                       savoir                        savoir etre                  savoir faire 
+
+projet robot                 savoir: découverte capteurs, logiciels de codage et outils d'usinage
+                             savoir être: esprit de groupe et répartition des tâches
+                             savoir faire: codage, usinage, dessins techniques et montage electrique.
+
+stage I2M                    savoir: découverte d'un laboratoire en mécanique des matériaux, langage technique et du logiciel Fusion 360
+                             savoir être: persévérance, organisation et gestion du temps et communication en équipe professionnelle
+                             savoir faire: modélisation, conception et rétroconception, prise de mesure et outils de simulation mécanique
+                           
+composition musicale         savoir: Connaissances musicale, rythme, structure d’un morceau, découverte de logiciels
+                             savoir être: créativité et ouverture d'esprit, patience et persévérence, esprit critique.
+                             savoir faire: prise en main d'un logiciel, création et composition musicale, mixage, gestion de projet.
+
+Création de site web:        savoir:Connaissances de base en CSS et JavaScript, design et d’ergonomie web, Culture numérique 
+                             savoir être: rigueur et organisation, sens de la créativité et de l'esthétique
+                             savoir faire: prise en main d’outils et environnements de développement, conception et architecture d'un site.
+
+Dessins et design:           savoir: Connaissances en techniques de dessin, bases du design graphique
+                             savoir être: Créativité et imagination, Sens esthétique et sensibilité artistique
+                             savoir faire: Réalisation de croquis et esquisses(concepts, prototypes) maîtrise d’outils de dessin traditionnels/numériques
