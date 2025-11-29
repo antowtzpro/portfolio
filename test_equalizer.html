@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TEST ÉGALISEUR - DEBUG</title>
+    <style>
+        body {
+            background: #1a1a1a;
+            color: white;
+            font-family: monospace;
+            padding: 20px;
+        }
+
+        .eq-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            height: 300px;
+            margin: 50px auto;
+            background: #2a2a2a;
+            padding: 20px;
+        }
+
+        .bar {
+            width: 15px;
+            height: 50px;
+            background: cyan;
+            transform-origin: center;
+        }
+
+        #logs {
+            background: #000;
+            padding: 20px;
+            border: 2px solid lime;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>🔍 TEST ÉGALISEUR - VERSION SIMPLIFIÉE</h1>
+
+    <div id="logs">
+        <div>📋 Logs de débogage :</div>
+    </div>
+
+    <div class="eq-container">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script>
+        const logsDiv = document.getElementById('logs');
+
+        function log(message, color = 'white') {
+            const div = document.createElement('div');
+            div.style.color = color;
+            div.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+            logsDiv.appendChild(div);
+            logsDiv.scrollTop = logsDiv.scrollHeight;
+            console.log(message);
+        }
+
+        log('🚀 Script démarré', 'lime');
+        log(`anime.js chargé? ${typeof anime !== 'undefined'}`, typeof anime !== 'undefined' ? 'lime' : 'red');
+
+        if (typeof anime !== 'undefined') {
+            log(`anime.js version: ${anime.version}`, 'cyan');
+        }
+
+        const bars = document.querySelectorAll('.eq-container .bar');
+        log(`Barres trouvées: ${bars.length}`, 'yellow');
+
+        function animateBar(bar, index) {
+            const targetHeight = 0.3 + Math.random() * 4.7;
+            const targetHue = 180 + Math.random() * 90;
+            const duration = 500 + Math.random() * 700;
+
+            if (index === 0) {
+                log(`🎯 Barre[0] -> height:${targetHeight.toFixed(2)}, hue:${targetHue.toFixed(0)}, dur:${duration.toFixed(0)}ms`, 'cyan');
+            }
+
+            anime({
+                targets: bar,
+                scaleY: targetHeight,
+                backgroundColor: `hsl(${targetHue}, 100%, 50%)`,
+                easing: 'easeInOutQuad',
+                duration: duration,
+                begin: function () {
+                    if (index === 0) log(`▶️ Barre[0] START`, 'lime');
+                },
+                complete: () => {
+                    if (index === 0) log(`✅ Barre[0] COMPLETE`, 'lime');
+                    animateBar(bar, index);
+                }
+            });
+        }
+
+        bars.forEach((bar, i) => {
+            bar.style.opacity = '1';
+            bar.style.transformOrigin = 'center';
+
+            const delay = Math.random() * 1000;
+            if (i === 0) log(`⏱️ Barre[0] démarre dans ${delay.toFixed(0)}ms`, 'yellow');
+
+            setTimeout(() => {
+                if (i === 0) log(`🚀 Lancement Barre[0]`, 'lime');
+                animateBar(bar, i);
+            }, delay);
+        });
+
+        log('✅ Toutes les barres programmées!', 'lime');
+    </script>
+</body>
+
+</html>

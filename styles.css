@@ -1961,6 +1961,211 @@ body::after {
     padding: 5rem 0;
 }
 
+/* Annexes */
+.annexes {
+    padding: 5rem 0 2rem 0;
+    background: var(--gray-50);
+}
+
+.annexes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+}
+
+.annexe-card {
+    background: linear-gradient(145deg, rgba(255,255,255,0.9), rgba(176,224,230,0.15));
+    border: 2px solid transparent;
+    border-radius: 24px;
+    box-shadow: 0 16px 40px rgba(0,102,255,0.12);
+    padding: 2.2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.annexe-icon {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, var(--light-blue), var(--primary-blue));
+    color: #fff;
+    box-shadow: 0 12px 30px rgba(37,99,235,0.35);
+    transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.35s ease;
+}
+
+.annexe-icon i {
+    font-size: 2rem;
+}
+
+.annexe-card span {
+    font-weight: 600;
+    color: var(--gray-800);
+    font-size: 1.05rem;
+}
+
+.annexe-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 22px 60px rgba(0,102,255,0.25);
+}
+
+.annexe-card:hover .annexe-icon {
+    background: linear-gradient(135deg, var(--primary-blue), var(--dark-blue));
+    box-shadow: 0 20px 70px rgba(37,99,235,0.45);
+    transform: scale(1.06) rotate(3deg);
+}
+
+.annexe-card:hover span {
+    color: var(--primary-blue);
+}
+
+.annexe-modal.hidden { display: none; }
+
+.annexe-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 1100;
+}
+
+.annexe-modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    backdrop-filter: blur(2px);
+}
+
+.annexe-modal-content {
+    position: relative;
+    max-width: 560px;
+    margin: 8vh auto;
+    background: #fff;
+    border-radius: 18px;
+    padding: 1.4rem;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.25);
+    animation: annexePop 300ms ease-out both;
+}
+
+.annexe-info-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    background: linear-gradient(135deg, rgba(255,255,255,0.96), rgba(176,224,230,0.15));
+    border: 1px solid rgba(37,99,235,0.12);
+    border-radius: 16px;
+    padding: 1rem 1rem 1.1rem;
+}
+
+.annexe-info-icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 16px;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+    color: #fff;
+    box-shadow: 0 16px 40px rgba(37,99,235,0.3);
+}
+
+.annexe-info-icon i { font-size: 1.6rem; }
+
+.annexe-info-body { text-align: center; }
+.annexe-info-body .annexe-title {
+    margin: 0.2rem 0 0.3rem 0;
+    font-size: 1.15rem;
+}
+
+.annexe-info-body .annexe-text {
+    margin: 0 0 0.6rem 0;
+    font-size: 0.95rem;
+}
+
+.annexe-hero {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.annexe-hero-icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 28px;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+    color: #fff;
+    box-shadow: 0 25px 70px rgba(37,99,235,0.35);
+}
+
+.annexe-hero-icon i { font-size: 3rem; }
+
+@keyframes annexePop {
+    from { opacity: 0; transform: translateY(10px) scale(0.98); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.annexe-modal-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(37,99,235,0.1);
+    color: var(--primary-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.annexe-title {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--gray-800);
+    margin-bottom: 0.8rem;
+}
+
+.annexe-text {
+    color: var(--gray-700);
+    line-height: 1.8;
+    margin-bottom: 1.2rem;
+}
+
+.annexe-keypoints {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.annexe-mini {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 0.5rem 0.7rem;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(176,224,230,0.12));
+    border: 1px solid rgba(37,99,235,0.18);
+}
+
+.annexe-mini i {
+    color: var(--primary-blue);
+    font-size: 1rem;
+}
+
+.annexe-mini span { font-size: 0.9rem; font-weight: 600; }
+
 .contact-info {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

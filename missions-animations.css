@@ -28,6 +28,54 @@
 }
 
 /* ========================================
+   ANIMATION ÉQUALISEUR AVEC CUBES DÉGRADÉ BLEU
+   ======================================== */
+
+.eq-container {
+    display: flex;
+    gap: 0;
+    align-items: center;
+    /* Centré verticalement pour expansion symétrique */
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    padding: 0 3vw;
+}
+
+.bar {
+    position: relative;
+    flex: 1 1 0;
+    margin: 0 clamp(2px, 0.6vw, 10px);
+    height: 50px;
+    /* Base néon (animé par JS) */
+    background-color: #00ccff;
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgba(0, 204, 255, 0.5);
+    transform-style: preserve-3d;
+    /* Transform géré par JS (anime.js) */
+    transform-origin: center;
+}
+
+.bar:hover {
+    filter: brightness(1.3);
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.8);
+}
+
+/* Effet de brillance */
+.bar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 30%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.4), transparent);
+    border-radius: 4px 4px 0 0;
+}
+
+/* Animation CSS supprimée (gérée par JS) */
+
+/* ========================================
    SECTIONS D'ANIMATION AU SCROLL
    ======================================== */
 
@@ -47,6 +95,16 @@
     /* Pas de background - utilise le fond de la page */
 }
 
+/* Plein écran uniquement pour la section musique */
+.scroll-animation-section.music-scroll-animation {
+    height: 100vh;
+}
+
+.missions-new .container-full .music-scroll-animation {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+}
+
 .animation-container {
     width: 100%;
     height: 100%;
@@ -57,7 +115,9 @@
 }
 
 /* SVG plein écran sans délimitation */
-.rc-buggy-svg, .gears-train-svg, .piano-roll-svg {
+.rc-buggy-svg,
+.gears-train-svg,
+.piano-roll-svg {
     width: 100%;
     max-width: 1400px;
     height: auto;
@@ -65,9 +125,39 @@
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
+/* Circuit imprimé robot (Généré par JS) */
+.robot-scroll-animation .circuit-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.robot-scroll-animation svg {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+
+/* Styles de base pour les éléments générés (les couleurs sont gérées par JS/SVG Defs) */
+.pcb-trace {
+    vector-effect: non-scaling-stroke;
+    /* Garde l'épaisseur constante */
+    opacity: 0.8;
+}
+
+.pcb-node {
+    transition: r 0.3s ease;
+}
+
+.pcb-node:hover {
+    r: 6;
+    filter: drop-shadow(0 0 5px #00ccff);
+}
+
 /* Effet quand la section est active (contrôlé par JS) */
 .scroll-animation-section.active {
-    background: radial-gradient(ellipse at center, rgba(255,255,255,0.05) 0%, transparent 70%);
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
 }
 
 .scroll-animation-section.active .rc-buggy-svg,
@@ -78,7 +168,7 @@
 
 /* Piano roll : fond transparent avec grille subtile */
 .piano-roll-svg {
-    filter: drop-shadow(0 5px 20px rgba(0,0,0,0.1));
+    filter: drop-shadow(0 5px 20px rgba(0, 0, 0, 0.1));
 }
 
 /* Les animations sont maintenant contrôlées par JavaScript */
@@ -197,6 +287,30 @@
     font-size: 1.05rem;
 }
 
+.keywords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 6px;
+}
+
+.kw {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    background: rgba(30, 64, 175, 0.08);
+    border: 1px solid rgba(30, 64, 175, 0.25);
+    border-radius: 9999px;
+    color: var(--gray-800);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.kw i {
+    color: var(--electric-blue);
+}
+
 /* Couleurs spécifiques par mission */
 .robot-fiche {
     border-top: 5px solid #FF6B6B;
@@ -242,7 +356,7 @@
     .mission-fiche {
         flex-direction: column;
     }
-    
+
     .fiche-images-float {
         flex: 1;
         flex-direction: row;
@@ -250,11 +364,11 @@
         top: 0;
         overflow-x: auto;
     }
-    
+
     .fiche-img {
         min-width: 250px;
     }
-    
+
     .scroll-animation-section {
         height: 60vh;
     }
@@ -264,31 +378,31 @@
     .section-title-missions {
         font-size: 2rem;
     }
-    
+
     .fiche-content h3 {
         font-size: 1.8rem;
     }
-    
+
     .mission-fiche {
         padding: 2rem;
         margin: 1.5rem 0;
     }
-    
+
     .car-body {
         width: 80px;
         height: 40px;
     }
-    
+
     .gear-container {
         width: 100px;
         height: 100px;
     }
-    
+
     .big-gear {
         width: 70px;
         height: 70px;
     }
-    
+
     .small-gear {
         width: 40px;
         height: 40px;
